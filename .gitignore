@@ -18,3 +18,4 @@ gen
 *.project
 .DS_Store
 target/
+library/libs/android-support-v4.jar
