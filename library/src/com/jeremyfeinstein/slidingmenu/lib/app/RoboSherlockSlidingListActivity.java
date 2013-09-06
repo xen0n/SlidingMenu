@@ -20,7 +20,7 @@ public class RoboSherlockSlidingListActivity extends RoboSherlockListActivity
 	 * @see android.app.Activity#onCreate(android.os.Bundle)
 	 */
 	@Override
-	public void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mHelper = new SlidingActivityHelper(this);
 		mHelper.onCreate(savedInstanceState);
@@ -35,7 +35,7 @@ public class RoboSherlockSlidingListActivity extends RoboSherlockListActivity
 	 * @see android.app.Activity#onPostCreate(android.os.Bundle)
 	 */
 	@Override
-	public void onPostCreate(Bundle savedInstanceState) {
+	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
 		mHelper.onPostCreate(savedInstanceState);
 	}
