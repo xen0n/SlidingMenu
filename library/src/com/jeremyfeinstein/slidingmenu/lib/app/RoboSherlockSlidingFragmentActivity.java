@@ -7,6 +7,7 @@ import android.view.ViewGroup.LayoutParams;
 
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+import com.jeremyfeinstein.slidingmenu.lib.app.SlidingActivityHelper.SlidingActivityBackAction;
 
 public class RoboSherlockSlidingFragmentActivity extends
 		RoboSherlockFragmentActivity implements SlidingActivityBase {
@@ -201,4 +202,11 @@ public class RoboSherlockSlidingFragmentActivity extends
 		return super.onKeyUp(keyCode, event);
 	}
 
+	public SlidingActivityBackAction getBackAction() {
+		return mHelper.getBackAction();
+	}
+
+	public void setBackAction(SlidingActivityBackAction action) {
+		mHelper.setBackAction(action);
+	}
 }

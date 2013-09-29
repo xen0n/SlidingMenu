@@ -8,6 +8,7 @@ import android.widget.ListView;
 
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockListActivity;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+import com.jeremyfeinstein.slidingmenu.lib.app.SlidingActivityHelper.SlidingActivityBackAction;
 
 public class RoboSherlockSlidingListActivity extends RoboSherlockListActivity
 		implements SlidingActivityBase {
@@ -203,4 +204,11 @@ public class RoboSherlockSlidingListActivity extends RoboSherlockListActivity
 		return super.onKeyUp(keyCode, event);
 	}
 
+	public SlidingActivityBackAction getBackAction() {
+		return mHelper.getBackAction();
+	}
+
+	public void setBackAction(SlidingActivityBackAction action) {
+		mHelper.setBackAction(action);
+	}
 }
