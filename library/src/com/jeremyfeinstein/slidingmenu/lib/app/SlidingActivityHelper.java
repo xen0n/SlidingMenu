@@ -88,8 +88,12 @@ public class SlidingActivityHelper {
 			} else {
 				mSlidingMenu.showContent(false);
 			}
+
+			mBackAction = (SlidingActivityBackAction) savedInstanceState
+					.getSerializable("SlidingActivityHelper.backaction");
 		} else {
 			mSlidingMenu.showContent(false);
+			mBackAction = SlidingActivityBackAction.BACK_TO_CONTENT;
 		}
 	}
 
@@ -140,6 +144,8 @@ public class SlidingActivityHelper {
 				mSlidingMenu.isMenuShowing());
 		outState.putBoolean("SlidingActivityHelper.secondary",
 				mSlidingMenu.isSecondaryMenuShowing());
+		outState.putSerializable("SlidingActivityHelper.backaction",
+				mBackAction);
 	}
 
 	/**
