@@ -70,9 +70,9 @@
 				<version>17_r1</version>
 			</dependency>
 			<dependency>
-				<groupId>com.android</groupId>
+				<groupId>com.google.android</groupId>
 				<artifactId>support-v4</artifactId>
-				<version>18.0.0</version>
+				<version>r7</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
